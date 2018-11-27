@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:backgroundTint="@android:color/primary_text_dark"
+    android:backgroundTintMode="multiply"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="137dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="179dp"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.012"
+            app:srcCompat="@drawable/crearttransp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/miperfil_but"
+                        android:layout_width="120dp"
+                        android:layout_height="110dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:visibility="visible"
+
+                        tools:layout_editor_absoluteX="50dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="194dp"
+                        android:layout_height="112dp"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:clickable="false"
+                        app:layout_constraintBottom_toTopOf="@+id/logintext"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_chainStyle="spread_inside"
+                        app:srcCompat="@drawable/miniusuarioblanco" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/logintext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Login"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteY="1268dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/dibujar_but"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@android:color/transparent"
+                        android:textAllCaps="false"
+                        android:visibility="visible"
+                        tools:layout_editor_absoluteX="50dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="194dp"
+                        android:layout_height="112dp"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:clickable="false"
+                        app:layout_constraintBottom_toTopOf="@+id/logintext"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_chainStyle="spread_inside"
+                        app:srcCompat="@drawable/minipincelblanco" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dibujar"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:layout_editor_absoluteX="78dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

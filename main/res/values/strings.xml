@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CreArt</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Inicia sesión o regístrate</string>
+    <string name="action_sign_in_short">Regístrate</string>
+    <string name="error_invalid_email">Este email no es válido</string>
+    <string name="error_invalid_password">La contraseña es muy corta</string>
+    <string name="error_incorrect_password">La contraseña es incorrecta</string>
+    <string name="error_field_required">Este campo es necesario</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="logo">Logo</string>
+    <string name="user">Beatriz</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="nick">Nombre de usuario</string>
+
+    <string name="title_perfil">Mi Perfil</string>
+    <string name="title_dibujar">Dibujar</string>
+</resources>
